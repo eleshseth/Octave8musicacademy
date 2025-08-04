@@ -48,6 +48,9 @@ const Header = () => {
             <Link to="/chords" className="text-foreground hover:text-customGreen transition-colors">
               Chords
             </Link>
+            <Link to="/courses" className="text-foreground hover:text-customGreen transition-colors">
+              Courses
+            </Link>
             {isAdmin && (
               <Link to="/admin" className="text-foreground hover:text-customGreen transition-colors">
                 Admin
