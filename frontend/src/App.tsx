@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
 import Index from './pages/Index';
 import Tabs from './pages/Tabs';
+import TabView from './pages/TabView';
 import Tutorials from './pages/Tutorials';
 import Chords from './pages/Chords';
 import SignIn from './pages/SignIn';
@@ -31,6 +32,7 @@ const AppContent = () => {
     <Routes>
       <Route path='/' element={<Index />} />
       <Route path='/tabs' element={<Tabs />} />
+      <Route path='/tabs/:id' element={<TabView />} />
       <Route path='/tutorials' element={<Tutorials />} />
       <Route path='/chords' element={<Chords />} />
       <Route path='/signin' element={<SignIn />} />
